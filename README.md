@@ -51,6 +51,4 @@ After, I created the markup and styling for the listing page and added the form 
  
 ## Reflections on the Project
  
-I ran into a few problems trying to render the second html page and spent a lot of time on this but once I realised I had to changed the html files to ejs, I was able to render both pages. I also spent quite a bit of time trying to get user input to show on the second page but after reading tutorials on ejs I was able to get this to work.
- 
-Unfortunately, we have hard-coded all of the results into the results page, where we would've liked to loop through the array and dynamically create the elements. Once we solved this, it didn't take too long to implement the remaining functionality.
+I ran into a few problems trying to render the second html page and spent a lot of time on this but once I realised I had to changed the html files to ejs, I was able to render both pages. I also had issues getting user input to show on the second page but after reading tutorials on ejs I was able to get the functionality to work. The most difficult part of the project was the edit button. I was able to get this working partially with the item name and price fileds but couldn't get the description textarea to show user input.
