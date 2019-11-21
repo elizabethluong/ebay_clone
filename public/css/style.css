@@ -21,15 +21,21 @@ h1 {
   font-size: 70px;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
+  padding: 10px;
 }
 
-input[type="text"] {
+input[type="text"],
+textarea[type="textarea"] {
   border-radius: 12px;
   width: 350px;
   height: 30px;
   border: gray 1px solid;
   box-shadow: 0 0 10px grey;
   padding: 15px 20px;
+}
+
+textarea[type="textarea"] {
+  height: 250px;
 }
 
 input[type="button"],
