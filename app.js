@@ -13,18 +13,22 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => res.render("index.ejs"));
 
 app.post("/listing", (req, res) => {
-  res.render("mockup.ejs", {
-    userInputName: req.body.name,
-    userInputPrice: req.body.price,
-    userInputDescription: req.body.description
-  });
-});
+  let userInputName = req.body.name;
+  let userInputPrice = req.body.price;
+  let userInputDescription = req.body.description;
 
-app.get("/listing", (req, res) => {
-  res.render("index.ejs", {
-    userInputName: req.body.name,
-    userInputPrice: req.body.price,
-    userInputDescription: req.body.description
+  res.render("mockup.ejs", {
+    userInputName,
+    userInputPrice,
+    userInputDescription
+  });
+
+  app.get("/listing", (req, res) => {
+    res.render("index.ejs", {
+      userInputName,
+      userInputPrice,
+      userInputDescription
+    });
   });
 });
 
