@@ -18,7 +18,6 @@ app.post("/listing", (req, res) => {
     userInputPrice: req.body.price,
     userInputDescription: req.body.description
   });
-  console.log(userInputName);
 });
 
 //   res.send(
