@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" type="text/css" href="/css/mockup.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lyster item</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <a href="#">
+        <img
+          src="https://icon-library.net/images/list-view-icon/list-view-icon-13.jpg"
+          alt="lyster-logo"
+          width="50px"
+        />
+      </a>
+      <h2><a href="#" class="logo">lyster</a></h2>
+    </div>
+    <h2>Review your item</h2>
+
+    <div class="container-listing">
+      <h3 class="item-heading">Item</h3>
+      <p><%= userInputName %></p>
+
+      <h3 class="item-price">Price</h3>
+
+      <p><%= userInputPrice %></p>
+      <h3 class="item-description">Description</h3>
+      <p><%= userInputDescription %></p>
+    </div>
+    <div class="edit-btn">
+      <input
+        type="submit"
+        name="searchButton"
+        id="searchButton"
+        value="Edit listing"
+      />
+    </div>
+  </body>
+</html>

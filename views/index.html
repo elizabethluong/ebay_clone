@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css"  />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>lyster</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <a href="#">
+          <img
+            src="https://icon-library.net/images/list-view-icon/list-view-icon-13.jpg"
+            alt="lyster-logo"
+            width="200px"
+          />
+        </a>
+        <h1><a href="#" class="logo">lyster</a></h1>
+      </div>
+      <form action="/listing" method="POST">
+        <div class="user-input-container">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name of item"
+          /></br>
+
+          <input type="text" name="price" id="price" placeholder="Price" /></br>
+
+        <textarea type="textarea" name="description" id="description" placeholder="Add details about your item here"></textarea><br>
+
+
+
+        </div>
+        <fieldset>
+          <input
+            type="submit"
+            name="searchButton"
+            id="searchButton"
+            value="Submit"
+          />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
