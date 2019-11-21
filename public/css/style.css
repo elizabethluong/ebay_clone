@@ -14,7 +14,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #99bd9f;
 }
 
 h1 {
@@ -38,9 +38,7 @@ textarea[type="textarea"] {
   height: 250px;
 }
 
-input[type="button"],
-input[type="submit"],
-.randomBtn {
+input[type="submit"] {
   padding: 10px 15px;
   font-size: 14px;
   background: #ffe18f;
@@ -49,9 +47,7 @@ input[type="submit"],
   border-radius: 5px;
 }
 
-input[type="button"]:hover,
-input[type="submit"]:hover,
-.randomBtn:hover {
+input[type="submit"]:hover {
   color: white;
   background: #ff988f;
 }
