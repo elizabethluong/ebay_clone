@@ -20,13 +20,4 @@ app.post("/listing", (req, res) => {
   });
 });
 
-//   res.send(
-//     // instead res.render("index.html")
-//     `Thanks ${userInputName}, I got the form
-//         Thanks ${userInputPrice} this is an option
-//         Thanks ${userInputDescription} this is a message.`
-
-// fetch(userInputName + userInputPrice + userInputDescription).then(response => {
-//   res.render("mockup.html");
-// });
 app.listen(port, () => console.log(`Listening on port ${port}!`));
