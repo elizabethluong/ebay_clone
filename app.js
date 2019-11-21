@@ -10,7 +10,7 @@ app.use(express.urlencoded());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => res.render("index.html"));
+app.get("/", (req, res) => res.render("index.ejs"));
 
 app.post("/listing", (req, res) => {
   res.render("mockup.ejs", {
@@ -18,6 +18,7 @@ app.post("/listing", (req, res) => {
     userInputPrice: req.body.price,
     userInputDescription: req.body.description
   });
+  console.log(userInputName);
 });
 
 //   res.send(
