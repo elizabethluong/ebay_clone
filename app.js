@@ -9,4 +9,12 @@ app.use(express.urlencoded());
 
 app.get("/", (req, res) => res.render("index.html"));
 
+app.post("/listing", (req, res) => {
+  const userInputName = req.body.name;
+  const userInputPrice = req.body.price;
+  const userInputDescription = req.body.description;
+  res.end();
+  console.log(userInputName);
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}!`));
