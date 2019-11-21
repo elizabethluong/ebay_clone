@@ -20,4 +20,12 @@ app.post("/listing", (req, res) => {
   });
 });
 
+app.get("/listing", (req, res) => {
+  res.render("index.ejs", {
+    userInputName: req.body.name,
+    userInputPrice: req.body.price,
+    userInputDescription: req.body.description
+  });
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}!`));
