@@ -1,0 +1,38 @@
+body {
+  display: block;
+  padding-top: 50px;
+}
+.container-header {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+}
+
+/* .logo-container > * {
+  display: inline;
+  padding-right: 10px;
+} */
+.container-listing {
+  text-align: left;
+  padding: 10px 40px;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+.item-heading,
+.item-price,
+.item-description {
+  padding-bottom: 10px;
+}
+.item-heading > a {
+  color: #16aee0;
+}
+.item-price > a {
+  color: green;
+}
