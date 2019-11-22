@@ -6,7 +6,6 @@ app.use(express.static("views"));
 app.use(express.static("public"));
 app.use(express.urlencoded());
 
-
 app.get("/", (req, res) => res.render("index.ejs"));
 
 app.post("/listing", (req, res) => {
@@ -20,12 +19,23 @@ app.post("/listing", (req, res) => {
     userInputDescription
   });
 
-  app.get("/listing", (req, res) => {
-    res.render("index.ejs", {
-      userInputName,
-      userInputPrice,
-      userInputDescription
-    });
+  // This just goes back to the index page, empty so it seems unnecessary unless you were trying to render the form pre-filled to edit.
+  // This app.get is nested under your app.post route above(!)
+  // app.get("/listing", (req, res) => {
+  //   res.render("index.ejs", {
+  //     userInputName,
+  //     userInputPrice,
+  //     userInputDescription
+  //   });
+  // });
+});
+
+// This route won't have access to the variables in the previous route. 
+app.get("/listing", (req, res) => {
+  res.render("index.ejs", {
+    userInputName,
+    userInputPrice,
+    userInputDescription
   });
 });
 
